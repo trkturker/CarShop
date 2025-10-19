@@ -23,7 +23,7 @@ const CarsContainer = () => {
 
           // const imageUrl = item.image;
           return (
-            <TouchableOpacity className='flex flex-1 mt-2 mb-2 bg-[#f3f5f7] rounded-2xl '>
+            <TouchableOpacity className='w-[48%] mt-2 mb-2 bg-[#f3f5f7] rounded-2xl '>
               <TouchableOpacity
                 className='flex flex-row m-2 p-2'
                 onPress={() => {
@@ -43,7 +43,7 @@ const CarsContainer = () => {
               <Image
                 // source={{ uri: imageUrl }}
                 // source={{ uri: '../assets/BMW-X4.png' }}
-                source={{ uri: 'https://www.pngplay.com/wp-content/uploads/13/BMW-X4-Transparent-PNG.png' }}
+                source={{ uri: item.image }}
                 className="w-full h-32 rounded-lg mb-2"
                 resizeMode="contain"
               />

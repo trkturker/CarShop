@@ -14,7 +14,7 @@ const cars: Car[] = [
   {
     id: '1',
     logo: '../assets/bmw-logo.png',
-    image: '../assets/BMW-X4.png',
+    image: 'https://www.pngplay.com/wp-content/uploads/13/BMW-X4-Transparent-PNG.png',
     name: 'BMW',
     model: 'X4',
     price: "45.590",
@@ -22,57 +22,43 @@ const cars: Car[] = [
   },
   {
     id: '2',
-    logo: '../assets/cadillac-logo.png',
-    image: '../assets/cadillac-logo.png',
-    name: 'Cadillac',
-    model: 'M3',
-    price: "55.590",
+    logo: '../assets/fiat-logo.png',
+    image: 'https://www.pngplay.com/wp-content/uploads/6/Fiat-Background-PNG-Image.png',
+    name: 'FIAT',
+    model: 'Viaggio',
+    price: "20.590",
     rating: "4.1",
   },
   {
     id: '3',
     logo: '../assets/tesla-logo.png',
-    image: '../assets/tesla-logo.png',
-    name: 'Tesla',
-    model: 'Model 3',
+    image: 'https://www.pngplay.com/wp-content/uploads/13/Cadillac-Automobile-Background-PNG-Image.png',
+    name: 'Cadillac',
+    model: 'Escalade',
     price: "65.590",
-    rating: "3.8",
+    rating: "4.9",
   },
   {
     id: '4',
     logo: '../assets/volkswagen-logo.pn',
-    image: '../assets/volkswagen-logo.pn',
+    image: 'https://www.pngplay.com/wp-content/uploads/15/Beetle-Volkswagen-Vw-No-Background.png',
     name: 'Volkswagen',
-    model: 'Golf',
-    price: "45.590",
+    model: 'Beetle',
+    price: "35.590",
     rating: "4.8",
   },
   {
     id: '5',
     logo: '../assets/tesla-logo.png',
-    image: '../assets/tesla-logo.png',
-    name: 'Tesla',
-    model: 'Model 3',
-    price: "65.590",
-    rating: "4.2",
+    image: 'https://www.pngplay.com/wp-content/uploads/13/Cadillac-Transparent-File.png',
+    name: 'Cadillac',
+    model: 'Eldorado Biarritz',
+    price: "59.999",
+    rating: "4.7",
   },
-  {
-    id: '6',
-    logo: '../assets/volkswagen-logo.pn',
-    image: '../assets/volkswagen-logo.pn',
-    name: 'Volkswagen',
-    model: 'Golf',
-    price: "45.590",
-    rating: "4.5",
-  },
-
 ];
 
 export const useCars = () => {
-  // 0. useQuery<Student[]>({}) olarak yaz
-  // 1. queryKey: Cache olarak tutacağı key
-  // 2. queryFn: Datayı çekeceği fonksiyon
-  // 3. staleTime: Cache süresini ms cinsinden tutar
 
   return useQuery<Car[]>({
     queryKey: ['cars'],

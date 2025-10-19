@@ -11,8 +11,8 @@ const HeroCard = () => {
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
-            source={require('@/assets/bmw-logo.png')}
-            className="w-14 h-14 "
+            source={require('@/assets/bmw-black-logo.png')}
+            className="w-14 h-14"
 
           />
         </View>
@@ -23,12 +23,12 @@ const HeroCard = () => {
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
-            source={require('@/assets/tesla-logo.png')}
+            source={require('@/assets/fiat-logo.png')}
             className="w-14 h-14 "
 
           />
         </View>
-        <Text className="text-gray-400 text-base font-bold">Tesla</Text>
+        <Text className="text-gray-400 text-base font-bold">FIAT</Text>
       </TouchableOpacity>
 
 
@@ -36,7 +36,7 @@ const HeroCard = () => {
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
-            source={require('@/assets/volkswagen-logo.png')}
+            source={require('@/assets/vw-logo.png')}
             className="w-14 h-14 "
 
           />
