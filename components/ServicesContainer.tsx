@@ -1,27 +1,26 @@
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { Link } from 'expo-router';
 import React from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { FlatList, ScrollView, Text, View } from 'react-native';
+import CarsContainer from '@/components/CarsContainer';
 
 const ServicesContainer = () => {
   return (
-    <ScrollView horizontal={true} className="mt-4" contentContainerClassName="gap-4">
-      <View className="flex-row items-center gap-2 rounded bg-slate-200 px-4 py-2">
-        <MaterialIcons name="home-repair-service" size={24} color="black" />
-        <Text>Repairing</Text>
+    // <ScrollView className="mt-4" contentContainerClassName="gap-4">
+    <View className='mt-4'>
+
+      <View className="flex gap-2 rounded-2xl min-h-screen bg-white px-4 py-2">
+        <View className="flex-row justify-between">
+          <Text className='text-2xl font-bold mx-2 my-4'>Popular Car</Text>
+          <Link href="/" className='text-base text-gray-300 mx-2 my-4'>View All</Link>
+        </View>
+
+        <CarsContainer />
+
       </View>
-      <View className="flex-row items-center gap-2 rounded bg-slate-200 px-4 py-2">
-        <MaterialIcons name="cleaning-services" size={24} color="black" />
-        <Text>Cleaning</Text>
-      </View>
-      <View className="flex-row items-center gap-2 rounded bg-slate-200 px-4 py-2">
-        <MaterialIcons name="local-laundry-service" size={24} color="black" />
-        <Text>Laundry</Text>
-      </View>
-      <View className="flex-row items-center gap-2 rounded bg-slate-200 px-4 py-2">
-        <MaterialIcons name="local-laundry-service" size={24} color="black" />
-        <Text>Laundry</Text>
-      </View>
-    </ScrollView>
+
+    </View>
+    // </ScrollView>
   );
 };
 

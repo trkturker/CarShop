@@ -5,7 +5,7 @@ import { Image, Text, View } from 'react-native';
 
 const HeroCard = () => {
   return (
-    <View className="flex flex-row justify-between mt-4 rounded-2xl my-4 mx-2 py-4">
+    <View className="flex flex-row justify-between mt-4 rounded-2xl my-4 mx-4 py-4">
 
       <View className="flex items-center justify-center">
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
