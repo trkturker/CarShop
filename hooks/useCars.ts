@@ -52,7 +52,7 @@ const cars: Car[] = [
     logo: '../assets/tesla-logo.png',
     image: 'https://www.pngplay.com/wp-content/uploads/13/Cadillac-Transparent-File.png',
     name: 'Cadillac',
-    model: 'Eldorado Biarritz',
+    model: 'Eldorado',
     price: "59.999",
     rating: "4.7",
   },
