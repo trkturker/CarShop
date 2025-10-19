@@ -11,7 +11,7 @@ import { ScrollView, View} from 'react-native';
 
 const Index = () => {
   return (
-    <View className="p-4 bg-[#f3f5f7]">
+    <View className="p-4 flex flex-1 bg-[#f3f5f7]">
       <UserInfo />
       <SearchInput />
       <HeroCard />
