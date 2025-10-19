@@ -1,13 +1,13 @@
 // rnfe
 
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 const HeroCard = () => {
   return (
     <View className="flex flex-row justify-between mt-4 rounded-2xl my-4 mx-4 py-4">
 
-      <View className="flex items-center justify-center">
+      <TouchableOpacity className="flex items-center justify-center">
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
@@ -17,9 +17,9 @@ const HeroCard = () => {
           />
         </View>
         <Text className="text-gray-400 text-base font-bold">BMW</Text>
-      </View>
-      
-      <View className="flex items-center justify-center">
+      </TouchableOpacity>
+
+      <TouchableOpacity className="flex items-center justify-center">
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
@@ -29,10 +29,10 @@ const HeroCard = () => {
           />
         </View>
         <Text className="text-gray-400 text-base font-bold">Tesla</Text>
-      </View>
+      </TouchableOpacity>
 
-      
-      <View className="flex items-center justify-center">
+
+      <TouchableOpacity className="flex items-center justify-center">
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
@@ -42,10 +42,10 @@ const HeroCard = () => {
           />
         </View>
         <Text className="text-gray-400 text-base font-bold">Volkswagen</Text>
-      </View>
+      </TouchableOpacity>
 
-      
-      <View className="flex items-center justify-center">
+
+      <TouchableOpacity className="flex items-center justify-center">
         <View className="flex items-center justify-center  w-20 h-20 bg-[#22252a] rounded-full">
 
           <Image
@@ -55,7 +55,7 @@ const HeroCard = () => {
           />
         </View>
         <Text className="text-gray-400 text-base font-bold">Cadillac</Text>
-      </View>
+      </TouchableOpacity>
 
 
 

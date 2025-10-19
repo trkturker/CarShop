@@ -1,12 +1,9 @@
-// rnfe
-
 import HeroCard from '@/components/HeroCard';
-import PricesContainer from '@/components/PricesContainer';
 import SearchInput from '@/components/SearchInput';
-import ServicesContainer from '@/components/ServicesContainer';
+import CarsCard from '@/components/CarsCard';
 import UserInfo from '@/components/UserInfo';
 import React from 'react';
-import { ScrollView, View} from 'react-native';
+import {View} from 'react-native';
 
 
 const Index = () => {
@@ -15,7 +12,7 @@ const Index = () => {
       <UserInfo />
       <SearchInput />
       <HeroCard />
-      <ServicesContainer />
+      <CarsCard />
     </View>
   );
 };
